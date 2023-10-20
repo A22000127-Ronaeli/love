@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-cover{
+    box-sizing: border-box;
+    background-image: url('/asset/img/img1.jpg');
+    background-size: cover; /* Menyesuaikan gambar ke ukuran elemen */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content Atas */
+.container-cover .content-atas{
+    text-align: center;
+    margin-top: 350px;
+    font-weight: bold;
+    color: #fff;
+}
+.container-cover .content-atas h1{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 40px;
+}
+
+/* Content Bawah */
+.container-cover .content-bawah{
+    box-sizing: border-box;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.container-cover .content-bawah .isi{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-cover .content-bawah span{
+    margin-bottom: 10px;
+    font-family: 'Pinyon Script', cursive;
+}
+
+.container-cover .content-bawah .isi a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #ffff;
+    border: 2px solid white ;
+    width: 50%;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: zoomInOut 3s infinite; /* Memulai animasi dengan nama "zoomInOut" selama 3 detik dan mengulanginya */
+}
+
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1); /* 0% dan 100% (awal dan akhir): ukuran aslinya */
+    }
+    50% {
+        transform: scale(1.2); /* 50% (tengah): ukuran 20% lebih besar (zoom in) */
+    }
+}
